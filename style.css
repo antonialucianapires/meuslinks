@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color:  honeydew;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 2% 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.foto img {
+    border: 3px solid black;
+    border-radius: 100px;
+}
+
+.descricao {
+    width: 50%;
+    display: inline-block;
+    color: black;
+}
+
+.descricao h1 {
+
+    font-weight: 200;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.descricao h1::before {
+    content: "";
+    width: 10%;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    left: 44%;
+    top: 100%;
+}
+
+.descricao h1 span {
+    font-weight: 600;
+}
+
+.descricao p {
+    padding-top: 20px;
+}
+
+.descricao p a {
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    width: 50%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnLink {
+    padding: 2%;
+    background: black;
+    text-decoration: none;
+    font-size: 2rem;
+    color: honeydew;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    width: 34px;
+}
+
+@media (max-width:600px) {
+
+    .descricao {
+        width: 100%;
+    }
+    .descricao h1 {
+        font-size: 18px;
+    }
+
+    .descricao h1::before {
+        width: 51%;
+        left: 25%;
+    }
+
+    .descricao p {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    footer {
+        padding: 5%;
+    }
+}
